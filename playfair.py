@@ -11,9 +11,7 @@ def matrix(key):
 			matrix.append(e)	
 	
 	#initialize a new list. Is there any elegant way to do that?
-	matrix_group=[]
-	for e in range(5):
-		matrix_group.append('')
+	matrix_group=[None for e in range(5)] 
 
 	#Break it into 5*5
 	matrix_group[0]=matrix[0:5]
